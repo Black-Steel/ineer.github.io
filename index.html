@@ -14,16 +14,13 @@
     <link rel="stylesheet" href="lib/css/style.css">
   </head>
   <body>
-    <header>
-      <div class="logo">Ineer</div>
-      <input type="checkbox" id="nav" type="checkbox" checked>
+    <nav>
       <ul>
-        <label for="nav" class="btn nav ani-c">导航</label>
         <li class="nav-box">
           <a href="/" class="a-r">首页</a>
         </li>
         <li class="nav-box">
-          <a href="/code">程序</a>
+          <a>程序</a>
           <div class="subnav">
             <a href="/code/html">html</a>
             <a href="/code/javascript">javascript</a>
@@ -32,13 +29,13 @@
           </div>
         </li>
         <li class="nav-box">
-          <a href="https://github.com/ineer">github</a>
+          <a>Github</a>
           <div class="subnav">
             <a href="/canvideo">canVideo</a>
           </div>
         </li> 
         <li class="nav-box">
-          <a href="/plugin">插件</a>
+          <a>插件</a>
           <div class="subnav">
             <a href="/chrome">Chrome</a>
             <a href="/firefox">Firefox</a>
@@ -48,15 +45,46 @@
           <a href="/friendlink" class="a-r">友链</a>
         </li>
         <li class="nav-trans"></li>
-        <li class="nav-box"><a href="#">语言</a></li>
-        <li class="nav-box"><a href="#">搜索</a></li>
         <li class="nav-box"><a href="#">&copy;Ineer</a></li>
       </ul>
-    </header>
-
+    </nav>
+    <div id="main">
+      <header>
+        <div class="logo">Ineer</div>
+        <a id="menu" href="#main" class="btn btn-default navbar-btn">
+          <span class="glyphicon glyphicon-th-list"></span>
+        </a>
+      </header>
+      <div style="padding-top:1.5rem;">
+        <div class="container">
+          <div class="jumbotron">
+            <div class="page-header">
+              <h1>CanVideo.js</h1>
+            </div>
+            <p>It is easy to play video with canVideo.js, and just supports HTML5.</p>
+            <p>Use less codes, automatically adapt to different devices.</p>
+            <p><a class="btn btn-primary btn-lg" href="/canvideo" role="button">阅读更多</a></p>
+          </div>
+          <div class="row">
+            <div class="col-sm-6 col-md-4">
+              <div class="thumbnail">
+                <img data-src="holder.js/300x300" src="img/canClearAd.png" alt="canClearAd">
+                <div class="caption">
+                  <h3>canClearAd</h3>
+                  <p>全自动清除浏览器广告的Chrome插件，支持通用广告，如百度推广或淘宝天猫等广告；也支持特殊网站的广告清除，告别广告，让页面清爽，是canClearAd的目标。</p>
+                  <p><a href="#敬请期待" class="btn btn-primary" role="button">下载</a> <a href="/chrome/canclearad" class="btn btn-default" role="button">详细阅读</a> <a href="https://github.com/ineer/canclearad" class="btn btn-default" role="button">获取源码</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="main-layer"></div>
+    </div>
 
     <script src="lib/js/jquery.min.js"></script>
     <script src="lib/js/bootstrap.min.js"></script>
     <script src="lib/js/angular.min.js"></script>
+    <script src="lib/js/default.js"></script>
   </body>
 </html>
