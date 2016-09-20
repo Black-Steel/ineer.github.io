@@ -191,6 +191,9 @@ header .logo {
 	font-weight: bold;
 	color: #3c3;
 }
+#menu {
+	display: none;
+}
 
 .pc nav {
 	top: 5rem;
@@ -225,6 +228,9 @@ header .logo {
 	position: absolute;
 	top: .5rem;
 	right: 1rem;
+}
+.mobile #menu {
+	display: block;
 }
 .mobile header + div {
 	margin-left: 0;
