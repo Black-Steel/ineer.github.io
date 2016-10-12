@@ -1,0 +1,9 @@
+{
+    "removeRule": [
+        ["#sideTool", 0],
+		["[id*='youku_ad']", 2],
+		["a[class*='list_ad']", 0],
+		["div[id*='module_ad']", 0]
+    ],
+    "replaceRule": []
+}

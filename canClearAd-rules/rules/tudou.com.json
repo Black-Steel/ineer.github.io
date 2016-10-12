@@ -1,0 +1,6 @@
+{
+    "removeRule": [
+        ["[id*='youku_ad']", 2]
+    ],
+    "replaceRule": []
+}

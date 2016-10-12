@@ -1,0 +1,13 @@
+{
+    "removeRule": [
+        ["#Topic_Top", 0],
+		["div[marginwidth]", 0],
+		["div[data-mod*='ad_popu']", 0],
+		["div[class='slide-outer']", 0],
+		["div[id*='ENGAGEYA_WIDGET']", 0],
+		["div[class='ad_l']", 0],
+		["div[id*='BAIDU_DUP']", 0],
+		["div[id*='cpro_u']", 0]
+    ],
+    "replaceRule": []
+}

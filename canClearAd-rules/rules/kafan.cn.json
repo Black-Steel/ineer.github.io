@@ -1,0 +1,6 @@
+{
+    "removeRule": [
+        ["div[class='wp a_f']", 0]
+    ],
+    "replaceRule": []
+}
