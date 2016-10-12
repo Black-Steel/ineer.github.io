@@ -1,36 +1,23 @@
 {
     "removeRule": [
 	["iframe[src*='/js/jf/lm.html']", 1],
-
 	["iframe[src*='cngr']", 2],
-
 	["iframe[src*='2345.com']", 3],
-
 	["iframe[src*='alicdn']", 3],
-
 	["[src*='http://cpro.baidustatic.com/cpro/ui/c.js']", 1],
 	["iframe[name*='aswift']", 2],
 	["div[id^='BAIDU']", 0],
 	["iframe[src*='entry.baidu']", 1],
 	["iframe[src*='pos.baidu']", 1],
-
 	["iframe[src*='jd.com']", 2],
 	["a[href*='union.click.jd'", 1],
-
 	["div[id^='ft_']", 0],
-
 	["a[href*='tkg5'", 1],
-
 	["a[href*='yzzzn']", 1],
-
 	["a[href*='50bang']", 1],
-
 	["a[href*='down.xiazaidc']", 1],
-
 	["a[href*='xiazai.zol.com']", 1],
-
 	["a[href*='xiyoucdn']", 1],
-
 	["a[href*='vstart']", 1]
     ],
     "replaceRule": []
