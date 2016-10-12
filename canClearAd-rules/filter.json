@@ -1,0 +1,63 @@
+{
+    "filter1": ["*://pos.baidu.com/*"
+        ,"*://cm.pos.baidu.com/*"
+		,"*://cpro.baidustatic.com/*"
+		,"*://dup.baidustatic.com/*"
+		,"*://eclick.baidu.com/*"
+		,"*://hm.baidu.com/*"
+		,"*://push.zhanzhang.baidu.com/*"
+		,"*://api.share.baidu.com/*"
+		,"*://wn.pos.baidu.com/*"
+		,"*://sp0.baidu.com/*"
+		,"*://sp1.baidu.com/*"
+		,"*://t12.baidu.com/*"
+		,"*://t10.baidu.com/*"
+		,"*://t11.baidu.com/*"
+		,"*://bzclk.baidu.com/*"
+		,"*://cb.baidu.com/*"
+		,"*://cbjs.baidu.com/*"
+		,"*://im-x.jd.com/*"
+		,"*://wn.x.jd.com/*"
+		,"*://x.jd.com/*"
+		,"*://dsp.simba.taobao.com/*"
+		,"*://img.alicdn.com/*"
+		,"*://img01.taobaocdn.com/*"
+		,"*://img02.taobaocdn.com/*"
+		,"*://img03.taobaocdn.com/*"
+		,"*://img04.taobaocdn.com/*"
+		,"*://strip.taobaocdn.com/*"
+		,"*://static.360buyimg.com/*"
+		,"*://img30.360buyimg.com/*"
+		,"*://img1.126.net/*"
+		,"*://material.mediav.com/*"
+		,"*://cdn.tanx.com/*"
+		,"*://pagead2.googlesyndication.com/*"
+		,"*://googleads.g.doubleclick.net/*"
+		,"*://files.jb51.net/*"
+		,"*://s0.2mdn.net/*"
+		,"*://img.ads.csdn.net/*"
+		,"*://ads.csdn.net/*"
+		,"*://bj.bcebos.com/*"
+		,"*://irs01.net/MTFlashStore.swf"
+		,"*://m.kejet.net/ms/16912/565f1f1c6.swf"
+		,"*://stuff.cdn.biddingx.com/*"
+		,"*://player.letvcdn.com/1c02_p/*" // 乐视广告
+		,"*://player.letvcdn.com/lc02_p/*"
+		,"*://imgcache.qq.com/tencentvideo_v1/player/MediaPlugin.swf*" // 腾讯广告
+		,"*://imgcache.qq.com/tencentvideo_v1/player/partialup/MediaPlugin.swf*"
+		,"*://imgcache.qq.com/tencentvideo_v1/playerv3/MediaPlugin.swf*"
+		,"*://imgcache.qq.com/tencentvideo_v1/playerv3/partialup/MediaPlugin.swf*"
+		,"*://pic.fastapi.net/sdk/fl/ku6/ku6sdk.swf*" // 酷6广告
+		,"*://p.you.video.sina.com.cn/swf/sub/publicityPlayer20160913_V4_1_39_74.swf*"  // 新浪广告
+		,"*://static.funshion.com/market/p2p/preroll/*" // 风行广告
+		,"*://static.hd.baofeng.com/swf/player/material/swf/*" // 暴风广告
+		,"*://stadig.ifeng.com/apvsta.js?*" // 凤凰广告
+		,"*://static.xyimg.net/*"
+		,"*://valf.atm.youku.com/vf?*" // 优酷广告
+		,"*://r.l.youku.com/rec_ad_show?*/*"
+		,"*://p.l.youku.com/cms_operation_toollog?*"
+    ],
+    "filter2": ["*://*.iqiyi.com/v_*.html"
+ 		//,"*://www.tudou.com/albumplay/*"
+    ]
+}
