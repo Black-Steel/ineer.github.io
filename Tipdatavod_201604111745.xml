@@ -8,7 +8,7 @@
 	<!--   changed为2时，表示积分tips的startPlay值可以修改                                       -->
 
 
-	<item id="NextVideo" level="1" duration="15" type="1">
+	<item id="NextVideo" level="1" duration="-1" type="1">
 		<conditions>
 			<fields>
 				<field name="curADState" operator="eq" value="false"/>
@@ -44,7 +44,7 @@
 		</list>
 	</item>
 
-	<item id="SwappedDef" level="10" duration="5" type="1">
+	<item id="SwappedDef" level="10" duration="-1" type="1">
 		<conditions>
 			<fields>
 				<field name="curADState" operator="eq" value="false"/>
@@ -62,7 +62,7 @@
 		</list>
 	</item>
 
-	<item id="SwappingDefinitionDef" level="10" duration="8" type="1">
+	<item id="SwappingDefinitionDef" level="10" duration="-1" type="1">
 		<conditions>
 			<fields>
 				<field name="curADState" operator="eq" value="false"/>
@@ -80,7 +80,7 @@
 		</list>
 	</item>
 
-	<item id="SwappingLimitDefinitionDef" level="10" duration="8" type="1">
+	<item id="SwappingLimitDefinitionDef" level="10" duration="-1" type="1">
 		<conditions>
 			<fields>
 				<field name="curADState" operator="eq" value="false"/>
@@ -98,7 +98,7 @@
 		</list>
 	</item>
 
-	<item id="LimitDefinition" level="10" duration="8" type="1">
+	<item id="LimitDefinition" level="10" duration="-1" type="1">
 		<conditions>
 			<fields>
 				<field name="curADState" operator="eq" value="false"/>
@@ -116,7 +116,7 @@
 		</list>
 	</item>
 
-	<item id="SwappedDefinitionDef" level="10" duration="5" type="1">
+	<item id="SwappedDefinitionDef" level="10" duration="-1" type="1">
 		<conditions>
 			<fields>
 				<field name="curADState" operator="eq" value="false"/>
@@ -134,7 +134,7 @@
 		</list>
 	</item>
 
-	<item id="SwappedAutoQD" level="1" duration="8" type="1">
+	<item id="SwappedAutoQD" level="1" duration="-1" type="1">
 		<conditions>
 			<fields>
 				<field name="curADState" operator="eq" value="false"/>
@@ -152,7 +152,7 @@
 		</list>
 	</item>
 
-	<item id="SwapTipQD" level="10" duration="10" type="1">
+	<item id="SwapTipQD" level="10" duration="-1" type="1">
 		<conditions>
 			<fields>
 				<field name="curADState" operator="eq" value="false"/>
@@ -170,7 +170,7 @@
 		</list>
 	</item>
 
-	<item id="LoopOn" level="10" duration="8" type="1">
+	<item id="LoopOn" level="10" duration="-1" type="1">
 		<conditions>
 			<fields>
 				<field name="curADState" operator="eq" value="false"/>
@@ -188,7 +188,7 @@
 		</list>
 	</item>
 
-	<item id="LoopOff" level="10" duration="8" type="1">
+	<item id="LoopOff" level="10" duration="-1" type="1">
 		<conditions>
 			<fields>
 				<field name="curADState" operator="eq" value="false"/>
@@ -224,7 +224,7 @@
 		</list>
 	</item>
 
-	<item id="SwappedTrack" level="10" duration="8" type="1">
+	<item id="SwappedTrack" level="10" duration="-1" type="1">
 		<conditions>
 			<fields>
 				<field name="curADState" operator="eq" value="false"/>
@@ -242,7 +242,7 @@
 		</list>
 	</item>
 
-	<item id="HotKeyFF" level="10" duration="8" type="1">
+	<item id="HotKeyFF" level="10" duration="-1" type="1">
 		<conditions>
 			<fields>
 				<field name="curADState" operator="eq" value="false"/>
@@ -260,7 +260,7 @@
 		</list>
 	</item>
 
-	<item id="SkippedHead" level="5" duration="5" type="1">
+	<item id="SkippedHead" level="5" duration="-1" type="1">
 		<conditions>
 			<fields>
 				<field name="curADState" operator="eq" value="false"/>
@@ -278,7 +278,7 @@
 		</list>
 	</item>
 
-	<item id="SkippingTail" level="10" duration="5" type="1">
+	<item id="SkippingTail" level="10" duration="-1" type="1">
 		<conditions>
 			<fields>
 				<field name="curADState" operator="eq" value="false"/>
@@ -296,7 +296,7 @@
 		</list>
 	</item>
 
-	<item id="ChangSize75" level="10" duration="8" type="1">
+	<item id="ChangSize75" level="10" duration="-1" type="1">
 		<conditions>
 			<fields>
 				<field name="curADState" operator="eq" value="false"/>
@@ -314,7 +314,7 @@
 		</list>
 	</item>
 
-	<item id="HistoryTime" level="5" duration="8" type="1">
+	<item id="HistoryTime" level="5" duration="-1" type="1">
 		<conditions>
 			<fields>
 				<field name="curADState" operator="eq" value="false"/>
@@ -332,7 +332,7 @@
 		</list>
 	</item>
 
-	<item id="ProSkipAd" level="11" duration="8" type="1">
+	<item id="ProSkipAd" level="11" duration="-1" type="1">
 		<conditions>
 			<fields>
 				<field name="curADState" operator="eq" value="false"/>
@@ -375,7 +375,7 @@
 
 	<!--提示即将跳过8秒后会显示的剧中广告, 类别是1, 持续时间是8秒-->
 	<!--必须是登录的会员-->
-	<item id="ToCancelSkipNextMiddleAD" level="1" duration="8" type="1">
+	<item id="ToCancelSkipNextMiddleAD" level="1" duration="-1" type="1">
 		<conditions>
 			<fields>
 				<field name="curADState" operator="eq" value="false"/>
@@ -399,12 +399,12 @@
 	<!--因为优先级很高, 前面的最高优先级是10, 所以这里把level设为11.-->
 	<!--这个tip是由signal发起的． Shawn.X -->
 	<!--《<span>#keyword#</span>》 将于  <span>#expiredTime#</span> 版权到期.-->
-	<item id="NoticeThisCopyrightWillExpire" level="11" duration="10" type="2">
+	<item id="NoticeThisCopyrightWillExpire" level="11" duration="-1" type="2">
 		<conditions>
 			<fields>
 				<field name="curADState" operator="eq" value="false"/>
-				<field name="curPlayDuration" operator="eq" value="60"/>
-				<field name="expiredTimeInterval" operator="lt" value="8"/>
+				<field name="curPlayDuration" operator="eq" value="3"/>
+				<field name="expiredTimeInterval" operator="lt" value="1"/>
 				<field name="c" operator="eq" value="1"/>
 			</fields>
 			<frequency count="1">
@@ -464,7 +464,7 @@
 		</list>
 	</item>
 
-	<item id="DirectPageShowPP" level="4" duration="8" type="1">
+	<item id="DirectPageShowPP" level="4" duration="-1" type="1">
 		<conditions>
 			<fields>
 				<field name="curADState" operator="eq" value="false"/>
@@ -482,7 +482,7 @@
 		</list>
 	</item>
 
-	<item id="CopyrightForceADTip" level="11" duration="8" type="1">
+	<item id="CopyrightForceADTip" level="11" duration="-1" type="1">
 		<conditions>
 			<fields>
 				<field name="curADState" operator="eq" value="true"/>
@@ -500,7 +500,7 @@
 		</list>
 	</item>
 
-	<item id="FilterOpenTip" level="10" duration="8" type="1">
+	<item id="FilterOpenTip" level="10" duration="-1" type="1">
 		<conditions>
 			<frequency count="100">
 				<restrain name="day"/>
@@ -515,7 +515,7 @@
 		</list>
 	</item>
 
-	<item id="FilterCloseTip" level="10" duration="8" type="1">
+	<item id="FilterCloseTip" level="10" duration="-1" type="1">
 		<conditions>
 			<frequency count="100">
 				<restrain name="day"/>
@@ -530,7 +530,7 @@
 		</list>
 	</item>
 
-	<item id="FilterNestEnjoyableTip" level="10" duration="8" type="1">
+	<item id="FilterNestEnjoyableTip" level="10" duration="-1" type="1">
 		<conditions>
 			<frequency count="100">
 				<restrain name="day"/>
@@ -545,7 +545,7 @@
 		</list>
 	</item>
 
-	<item id="ADNoticeBuyVIPTips" level="1" duration="8" type="1">
+	<item id="ADNoticeBuyVIPTips" level="1" duration="-1" type="1">
 		<conditions>
 			<frequency count="2">
 				<restrain name="day"/>
