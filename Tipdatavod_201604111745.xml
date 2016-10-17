@@ -1,471 +1,562 @@
-<root>
-<!-- ËµÃ÷ÎÄ×Ö .Shawn.X -->
-<!-- 1. °æ±¾×îºóÐÞ¸ÄÊ±¼ä:2012Äê12ÔÂ28ÈÕ                                                                            -->
-<!-- 2. ÕâÐ©tipÏÔÊ¾µÄ·¢ÆðÓÐÁ½ÖÖ·½Ê½:                                     -->
-<!--    type=1, ÆÕÍ¨Àà, signalÇý¶¯, ÒòÊ±¼ä½Ï¾Ã, ¸ö±ð±êÇ©Ò²²»·ûºÏÕâ¸ö¹æ¶¨       -->
-<!--    type=2, ÍÆ¹ãÀà£¬Ê±¼äÇý¶¯ ;                                      -->
-<!-- 3. changedÎª1Ê±£¬±íÊ¾ºÍÓ°ÒôtipsÏà¹ØµÄtipµÄvvÖµ¿ÉÒÔÐÞ¸Ä                                  -->
-<!--    changedÎª2Ê±£¬±íÊ¾»ý·ÖtipsµÄstartPlayÖµ¿ÉÒÔÐÞ¸Ä                                        -->
-<item id="NextVideo" level="1" duration="15" type="1">
-<conditions>
-<fields>
-<field name="curADState" operator="eq" value="false"/>
-</fields>
-<frequency count="100">
-<restrain name="day"/>
-</frequency>
-</conditions>
-<list>
-<message>
-<![CDATA[  tipsdata_next_video ]]>
-</message>
-</list>
-</item>
-<item id="SwappingDef" level="10" duration="-1" type="1">
-<conditions>
-<fields>
-<field name="curADState" operator="eq" value="false"/>
-</fields>
-<frequency count="100">
-<restrain name="day"/>
-</frequency>
-</conditions>
-<list>
-<message>
-<![CDATA[  tipsdata_swapping_def ]]>
-</message>
-</list>
-</item>
-<item id="SwappedDef" level="10" duration="5" type="1">
-<conditions>
-<fields>
-<field name="curADState" operator="eq" value="false"/>
-</fields>
-<frequency count="100">
-<restrain name="day"/>
-</frequency>
-</conditions>
-<list>
-<message>
-<![CDATA[  tipsdata_swapped_def ]]>
-</message>
-</list>
-</item>
-<item id="SwappingDefinitionDef" level="10" duration="8" type="1">
-<conditions>
-<fields>
-<field name="curADState" operator="eq" value="false"/>
-</fields>
-<frequency count="100">
-<restrain name="day"/>
-</frequency>
-</conditions>
-<list>
-<message>
-<![CDATA[  tipsdata_swapping_definition_def ]]>
-</message>
-</list>
-</item>
-<item id="SwappingLimitDefinitionDef" level="10" duration="8" type="1">
-<conditions>
-<fields>
-<field name="curADState" operator="eq" value="false"/>
-</fields>
-<frequency count="100">
-<restrain name="day"/>
-</frequency>
-</conditions>
-<list>
-<message>
-<![CDATA[  tipsdata_swapping_limit_definition_def ]]>
-</message>
-</list>
-</item>
-<item id="LimitDefinition" level="10" duration="8" type="1">
-<conditions>
-<fields>
-<field name="curADState" operator="eq" value="false"/>
-</fields>
-<frequency count="1">
-<restrain name="day"/>
-</frequency>
-</conditions>
-<list>
-<message>
-<![CDATA[  tipsdata_limit_definition ]]>
-</message>
-</list>
-</item>
-<item id="SwappedDefinitionDef" level="10" duration="5" type="1">
-<conditions>
-<fields>
-<field name="curADState" operator="eq" value="false"/>
-</fields>
-<frequency count="100">
-<restrain name="day"/>
-</frequency>
-</conditions>
-<list>
-<message>
-<![CDATA[  tipsdata_swapped_definition_def ]]>
-</message>
-</list>
-</item>
-<item id="SwappedAutoQD" level="1" duration="8" type="1">
-<conditions>
-<fields>
-<field name="curADState" operator="eq" value="false"/>
-</fields>
-<frequency count="100">
-<restrain name="day"/>
-</frequency>
-</conditions>
-<list>
-<message>
-<![CDATA[  tipsdata_swapped_auto_qd ]]>
-</message>
-</list>
-</item>
-<item id="SwapTipQD" level="10" duration="10" type="1">
-<conditions>
-<fields>
-<field name="curADState" operator="eq" value="false"/>
-</fields>
-<frequency count="100">
-<restrain name="day"/>
-</frequency>
-</conditions>
-<list>
-<message>
-<![CDATA[  tipsdata_swap_tip_qd ]]>
-</message>
-</list>
-</item>
-<item id="LoopOn" level="10" duration="8" type="1">
-<conditions>
-<fields>
-<field name="curADState" operator="eq" value="false"/>
-</fields>
-<frequency count="100">
-<restrain name="day"/>
-</frequency>
-</conditions>
-<list>
-<message>
-<![CDATA[  tipsdata_loop_on ]]>
-</message>
-</list>
-</item>
-<item id="LoopOff" level="10" duration="8" type="1">
-<conditions>
-<fields>
-<field name="curADState" operator="eq" value="false"/>
-</fields>
-<frequency count="100">
-<restrain name="day"/>
-</frequency>
-</conditions>
-<list>
-<message>
-<![CDATA[  tipsdata_loop_off ]]>
-</message>
-</list>
-</item>
-<item id="SwappingTrack" level="10" duration="-1" type="1">
-<conditions>
-<fields>
-<field name="curADState" operator="eq" value="false"/>
-</fields>
-<frequency count="100">
-<restrain name="day"/>
-</frequency>
-</conditions>
-<list>
-<message>
-<![CDATA[  tipsdata_swapping_track ]]>
-</message>
-</list>
-</item>
-<item id="SwappedTrack" level="10" duration="8" type="1">
-<conditions>
-<fields>
-<field name="curADState" operator="eq" value="false"/>
-</fields>
-<frequency count="100">
-<restrain name="day"/>
-</frequency>
-</conditions>
-<list>
-<message>
-<![CDATA[  tipsdata_swapped_track ]]>
-</message>
-</list>
-</item>
-<item id="HotKeyFF" level="10" duration="8" type="1">
-<conditions>
-<fields>
-<field name="curADState" operator="eq" value="false"/>
-</fields>
-<frequency count="1">
-<restrain name="vv"/>
-</frequency>
-</conditions>
-<list>
-<message>
-<![CDATA[  tipsdata_hotkey_ff ]]>
-</message>
-</list>
-</item>
-<item id="SkippedHead" level="5" duration="5" type="1">
-<conditions>
-<fields>
-<field name="curADState" operator="eq" value="false"/>
-</fields>
-<frequency count="100">
-<restrain name="day"/>
-</frequency>
-</conditions>
-<list>
-<message>
-<![CDATA[  tipsdata_skipped_head ]]>
-</message>
-</list>
-</item>
-<item id="SkippingTail" level="10" duration="5" type="1">
-<conditions>
-<fields>
-<field name="curADState" operator="eq" value="false"/>
-</fields>
-<frequency count="100">
-<restrain name="day"/>
-</frequency>
-</conditions>
-<list>
-<message>
-<![CDATA[  tipsdata_skipping_tail ]]>
-</message>
-</list>
-</item>
-<item id="ChangSize75" level="10" duration="8" type="1">
-<conditions>
-<fields>
-<field name="curADState" operator="eq" value="false"/>
-</fields>
-<frequency count="1">
-<restrain name="live"/>
-</frequency>
-</conditions>
-<list>
-<message>
-<![CDATA[  tipsdata_chang_size_75 ]]>
-</message>
-</list>
-</item>
-<item id="HistoryTime" level="5" duration="8" type="1">
-<conditions>
-<fields>
-<field name="curADState" operator="eq" value="false"/>
-</fields>
-<frequency count="100">
-<restrain name="day"/>
-</frequency>
-</conditions>
-<list>
-<message>
-<![CDATA[  tipsdata_sistory_time ]]>
-</message>
-</list>
-</item>
-<item id="ProSkipAd" level="11" duration="8" type="1">
-<conditions>
-<fields>
-<field name="curADState" operator="eq" value="false"/>
-</fields>
-<frequency count="1">
-<restrain name="day"/>
-</frequency>
-</conditions>
-<list>
-<message>
-<![CDATA[  tipsdata_proskip_ad ]]>
-</message>
-</list>
-</item>
-<!-- ÕýÔÚÎªÄú²¥·ÅÆ¬ÖÐ¹ã¸æ, ¿ÉÑ¡ÔñÊÇ·ñÒªÌø¹ý, Àà±ðÊÇ1, ³ÖÐøÊ±¼äÊÇ8Ãë -->
-<!-- ÏÞÖÆÌõ¼þÊÇ£º  ²»ÊÇÕýÔÚµÇÂ¼ÖÐµÄ»áÔ± -->
-<!-- Ã¿ÌìÃ¿ÈË´ÎÖ»×î¶àÏÔÊ¾Á½´ÎÕâ¸ötips -->
-<item id="ToSelectWhetherToSkipPlayingMiddleAD" level="1" duration="-1" type="1">
-<conditions>
-<fields>
-<field name="curADState" operator="eq" value="false"/>
-<field name="member" operator="eq" value="false"/>
-</fields>
-<frequency count="2">
-<restrain name="day"/>
-<restrain name="user"/>
-</frequency>
-</conditions>
-<list>
-<message>
-<![CDATA[
-tipsdata_to_cancel_skip_next_middle_ad
-]]>
-</message>
-</list>
-</item>
-<!-- ÌáÊ¾¼´½«Ìø¹ý8Ãëºó»áÏÔÊ¾µÄ¾çÖÐ¹ã¸æ, Àà±ðÊÇ1, ³ÖÐøÊ±¼äÊÇ8Ãë -->
-<!-- ±ØÐëÊÇµÇÂ¼µÄ»áÔ± -->
-<item id="ToCancelSkipNextMiddleAD" level="1" duration="8" type="1">
-<conditions>
-<fields>
-<field name="curADState" operator="eq" value="false"/>
-<field name="member" operator="eq" value="true"/>
-</fields>
-<frequency count="1">
-<restrain name="day"/>
-<restrain name="user"/>
-</frequency>
-</conditions>
-<list>
-<message>
-<![CDATA[  tipsdata_to_cancel_skip_next_middle_ad ]]>
-</message>
-</list>
-</item>
-<!--
-ÌáÊ¾°æÈ¨ÏÂÏß, Èç¹û»¹ÓÐÐ¡ÓÚ7ÌìµÄÊ±¼äÏÂÏß, Ã¿ÌìÒ»¸ö×¨¼­Ò»Ì¨µçÄÔÌáÐÑÒ»´Î, Àà±ðÊÇ1, ´ÓÆðÊ¼60Ãë¿ªÊ¼ÏÔÊ¾, ³ÖÐøÊ±¼äÊÇ10Ãë
--->
-<!-- ÒòÎªÓÅÏÈ¼¶ºÜ¸ß, Ç°ÃæµÄ×î¸ßÓÅÏÈ¼¶ÊÇ10, ËùÒÔÕâÀï°ÑlevelÉèÎª11. -->
-<!-- Õâ¸ötipÊÇÓÉsignal·¢ÆðµÄ£® Shawn.X  -->
-<!--
-¡¶<span>#keyword#</span>¡· ½«ÓÚ  <span>#expiredTime#</span> °æÈ¨µ½ÆÚ.
--->
-<item id="NoticeThisCopyrightWillExpire" level="11" duration="10" type="2">
-<conditions>
-<fields>
-<field name="curADState" operator="eq" value="false"/>
-<field name="curPlayDuration" operator="eq" value="60"/>
-<field name="expiredTimeInterval" operator="lt" value="8"/>
-<field name="c" operator="eq" value="2"/>
-</fields>
-<frequency count="1">
-<restrain name="day"/>
-<restrain name="album"/>
-</frequency>
-</conditions>
-<list>
-<message>
-<![CDATA[  tipsdata_to_cancel_skip_next_middle_ad ]]>
-</message>
-</list>
-</item>
-<!--  ·Ç»áÔ±ÊÔ¿´. -->
-<item id="TryWatch" level="10" duration="-1" type="1">
-<list>
-<message>
-<![CDATA[  tipsdata_try_watch_have_ticket ]]>
-</message>
-</list>
-</item>
-<!--  »áÔ±Ã»ÓÐµã²¥È¯ÊÔ¿´. -->
-<item id="TryWatchNotHaveTicket" level="10" duration="-1" type="1">
-<list>
-<message>
-<![CDATA[  tipsdata_try_watch_nothave_ticket ]]>
-</message>
-</list>
-</item>
-<!--  »áÔ±ÓÐµã²¥È¯ÊÔ¿´. -->
-<item id="TryWatchHaveTicket" level="10" duration="-1" type="1">
-<list>
-<message>
-<![CDATA[  tipsdata_try_watch_have_ticket ]]>
-</message>
-</list>
-</item>
-<item id="TryWatchTotal" level="10" duration="-1" type="1">
-<list>
-<message>
-<![CDATA[  tipsdata_try_watch_total ]]>
-</message>
-</list>
-</item>
-<item id="DirectPageShowPP" level="4" duration="8" type="1">
-<conditions>
-<fields>
-<field name="curADState" operator="eq" value="false"/>
-</fields>
-<frequency count="2">
-<restrain name="day"/>
-</frequency>
-</conditions>
-<list>
-<message>
-<![CDATA[  tipsdata_direct_page_show_pp ]]>
-</message>
-</list>
-</item>
-<item id="CopyrightForceADTip" level="9" duration="8" type="1">
-<conditions>
-<fields>
-<field name="curADState" operator="eq" value="true"/>
-</fields>
-<frequency count="100">
-<restrain name="day"/>
-</frequency>
-</conditions>
-<list>
-<message>
-<![CDATA[  tipsdata_copyright_force_adtip ]]>
-</message>
-</list>
-</item>
-<item id="FilterOpenTip" level="10" duration="8" type="1">
-<conditions>
-<frequency count="100">
-<restrain name="day"/>
-</frequency>
-</conditions>
-<list>
-<message>
-<![CDATA[  tipsdata_filter_open_tip ]]>
-</message>
-</list>
-</item>
-<item id="FilterCloseTip" level="10" duration="8" type="1">
-<conditions>
-<frequency count="100">
-<restrain name="day"/>
-</frequency>
-</conditions>
-<list>
-<message>
-<![CDATA[  tipsdata_filter_close_tip ]]>
-</message>
-</list>
-</item>
-<item id="FilterNestEnjoyableTip" level="10" duration="8" type="1">
-<conditions>
-<frequency count="100">
-<restrain name="day"/>
-</frequency>
-</conditions>
-<list>
-<message>
-<![CDATA[  tipsdata_filter_nest_enjoyable_tip ]]>
-</message>
-</list>
-</item>
-<item id="ADNoticeBuyVIPTips" level="1" duration="8" type="1">
-<conditions>
-<frequency count="2">
-<restrain name="day"/>
-</frequency>
-</conditions>
-<list>
-<message>
-<![CDATA[  tipsdata_ad_notice_buy_viptips ]]>
-</message>
-</list>
-</item>
+ï»¿<root>
+	<!--è¯´æ˜Žæ–‡å­— .Shawn.X-->
+	<!--1. ç‰ˆæœ¬æœ€åŽä¿®æ”¹æ—¶é—´:2012å¹´12æœˆ28æ—¥                                                                           -->
+	<!--2. è¿™äº›tipæ˜¾ç¤ºçš„å‘èµ·æœ‰ä¸¤ç§æ–¹å¼:                                    -->
+	<!--   type=1, æ™®é€šç±», signalé©±åŠ¨, å› æ—¶é—´è¾ƒä¹…, ä¸ªåˆ«æ ‡ç­¾ä¹Ÿä¸ç¬¦åˆè¿™ä¸ªè§„å®š      -->
+	<!--   type=2, æŽ¨å¹¿ç±»ï¼Œæ—¶é—´é©±åŠ¨ ;                                     -->
+	<!--3. changedä¸º1æ—¶ï¼Œè¡¨ç¤ºå’Œå½±éŸ³tipsç›¸å…³çš„tipçš„vvå€¼å¯ä»¥ä¿®æ”¹                                 -->
+	<!--   changedä¸º2æ—¶ï¼Œè¡¨ç¤ºç§¯åˆ†tipsçš„startPlayå€¼å¯ä»¥ä¿®æ”¹                                       -->
+
+
+	<item id="NextVideo" level="1" duration="15" type="1">
+		<conditions>
+			<fields>
+				<field name="curADState" operator="eq" value="false"/>
+			</fields>
+			<frequency count="100">
+				<restrain name="day"/>
+			</frequency>
+		</conditions>
+		<list>
+			<message>
+				<![CDATA[
+				tipsdata_next_video
+            ]]>
+			</message>
+		</list>
+	</item>
+
+	<item id="SwappingDef" level="10" duration="-1" type="1">
+		<conditions>
+			<fields>
+				<field name="curADState" operator="eq" value="false"/>
+			</fields>
+			<frequency count="100">
+				<restrain name="day"/>
+			</frequency>
+		</conditions>
+		<list>
+			<message>
+				<![CDATA[
+				tipsdata_swapping_def
+            ]]>
+			</message>
+		</list>
+	</item>
+
+	<item id="SwappedDef" level="10" duration="5" type="1">
+		<conditions>
+			<fields>
+				<field name="curADState" operator="eq" value="false"/>
+			</fields>
+			<frequency count="100">
+				<restrain name="day"/>
+			</frequency>
+		</conditions>
+		<list>
+			<message>
+				<![CDATA[
+				tipsdata_swapped_def
+            ]]>
+			</message>
+		</list>
+	</item>
+
+	<item id="SwappingDefinitionDef" level="10" duration="8" type="1">
+		<conditions>
+			<fields>
+				<field name="curADState" operator="eq" value="false"/>
+			</fields>
+			<frequency count="100">
+				<restrain name="day"/>
+			</frequency>
+		</conditions>
+		<list>
+			<message>
+				<![CDATA[
+				tipsdata_swapping_definition_def
+            ]]>
+			</message>
+		</list>
+	</item>
+
+	<item id="SwappingLimitDefinitionDef" level="10" duration="8" type="1">
+		<conditions>
+			<fields>
+				<field name="curADState" operator="eq" value="false"/>
+			</fields>
+			<frequency count="100">
+				<restrain name="day"/>
+			</frequency>
+		</conditions>
+		<list>
+			<message>
+				<![CDATA[
+				tipsdata_swapping_limit_definition_def
+            ]]>
+			</message>
+		</list>
+	</item>
+
+	<item id="LimitDefinition" level="10" duration="8" type="1">
+		<conditions>
+			<fields>
+				<field name="curADState" operator="eq" value="false"/>
+			</fields>
+			<frequency count="1">
+				<restrain name="day"/>
+			</frequency>
+		</conditions>
+		<list>
+			<message>
+				<![CDATA[
+				tipsdata_limit_definition
+            ]]>
+			</message>
+		</list>
+	</item>
+
+	<item id="SwappedDefinitionDef" level="10" duration="5" type="1">
+		<conditions>
+			<fields>
+				<field name="curADState" operator="eq" value="false"/>
+			</fields>
+			<frequency count="100">
+				<restrain name="day"/>
+			</frequency>
+		</conditions>
+		<list>
+			<message>
+				<![CDATA[
+				tipsdata_swapped_definition_def
+            ]]>
+			</message>
+		</list>
+	</item>
+
+	<item id="SwappedAutoQD" level="1" duration="8" type="1">
+		<conditions>
+			<fields>
+				<field name="curADState" operator="eq" value="false"/>
+			</fields>
+			<frequency count="100">
+				<restrain name="day"/>
+			</frequency>
+		</conditions>
+		<list>
+			<message>
+				<![CDATA[
+				tipsdata_swapped_auto_qd
+            ]]>
+			</message>
+		</list>
+	</item>
+
+	<item id="SwapTipQD" level="10" duration="10" type="1">
+		<conditions>
+			<fields>
+				<field name="curADState" operator="eq" value="false"/>
+			</fields>
+			<frequency count="100">
+				<restrain name="day"/>
+			</frequency>
+		</conditions>
+		<list>
+			<message>
+				<![CDATA[
+				tipsdata_swap_tip_qd
+            ]]>
+			</message>
+		</list>
+	</item>
+
+	<item id="LoopOn" level="10" duration="8" type="1">
+		<conditions>
+			<fields>
+				<field name="curADState" operator="eq" value="false"/>
+			</fields>
+			<frequency count="100">
+				<restrain name="day"/>
+			</frequency>
+		</conditions>
+		<list>
+			<message>
+				<![CDATA[
+				tipsdata_loop_on
+            ]]>
+			</message>
+		</list>
+	</item>
+
+	<item id="LoopOff" level="10" duration="8" type="1">
+		<conditions>
+			<fields>
+				<field name="curADState" operator="eq" value="false"/>
+			</fields>
+			<frequency count="100">
+				<restrain name="day"/>
+			</frequency>
+		</conditions>
+		<list>
+			<message>
+				<![CDATA[
+				tipsdata_loop_off
+            ]]>
+			</message>
+		</list>
+	</item>
+
+	<item id="SwappingTrack" level="10" duration="-1" type="1">
+		<conditions>
+			<fields>
+				<field name="curADState" operator="eq" value="false"/>
+			</fields>
+			<frequency count="100">
+				<restrain name="day"/>
+			</frequency>
+		</conditions>
+		<list>
+			<message>
+				<![CDATA[
+				tipsdata_swapping_track
+            ]]>
+			</message>
+		</list>
+	</item>
+
+	<item id="SwappedTrack" level="10" duration="8" type="1">
+		<conditions>
+			<fields>
+				<field name="curADState" operator="eq" value="false"/>
+			</fields>
+			<frequency count="100">
+				<restrain name="day"/>
+			</frequency>
+		</conditions>
+		<list>
+			<message>
+				<![CDATA[
+				tipsdata_swapped_track
+            ]]>
+			</message>
+		</list>
+	</item>
+
+	<item id="HotKeyFF" level="10" duration="8" type="1">
+		<conditions>
+			<fields>
+				<field name="curADState" operator="eq" value="false"/>
+			</fields>
+			<frequency count="1">
+				<restrain name="vv"/>
+			</frequency>
+		</conditions>
+		<list>
+			<message>
+				<![CDATA[
+				tipsdata_hotkey_ff
+            ]]>
+			</message>
+		</list>
+	</item>
+
+	<item id="SkippedHead" level="5" duration="5" type="1">
+		<conditions>
+			<fields>
+				<field name="curADState" operator="eq" value="false"/>
+			</fields>
+			<frequency count="100">
+				<restrain name="day"/>
+			</frequency>
+		</conditions>
+		<list>
+			<message>
+				<![CDATA[
+				tipsdata_skipped_head
+            ]]>
+			</message>
+		</list>
+	</item>
+
+	<item id="SkippingTail" level="10" duration="5" type="1">
+		<conditions>
+			<fields>
+				<field name="curADState" operator="eq" value="false"/>
+			</fields>
+			<frequency count="100">
+				<restrain name="day"/>
+			</frequency>
+		</conditions>
+		<list>
+			<message>
+				<![CDATA[
+				tipsdata_skipping_tail
+            ]]>
+			</message>
+		</list>
+	</item>
+
+	<item id="ChangSize75" level="10" duration="8" type="1">
+		<conditions>
+			<fields>
+				<field name="curADState" operator="eq" value="false"/>
+			</fields>
+			<frequency count="1">
+				<restrain name="live"/>
+			</frequency>
+		</conditions>
+		<list>
+			<message>
+				<![CDATA[
+				tipsdata_chang_size_75
+            ]]>
+			</message>
+		</list>
+	</item>
+
+	<item id="HistoryTime" level="5" duration="8" type="1">
+		<conditions>
+			<fields>
+				<field name="curADState" operator="eq" value="false"/>
+			</fields>
+			<frequency count="100">
+				<restrain name="day"/>
+			</frequency>
+		</conditions>
+		<list>
+			<message>
+				<![CDATA[
+				tipsdata_sistory_time
+            ]]>
+			</message>
+		</list>
+	</item>
+
+	<item id="ProSkipAd" level="11" duration="8" type="1">
+		<conditions>
+			<fields>
+				<field name="curADState" operator="eq" value="false"/>
+			</fields>
+			<frequency count="1">
+				<restrain name="day"/>
+			</frequency>
+		</conditions>
+		<list>
+			<message>
+				<![CDATA[
+				tipsdata_proskip_ad
+            ]]>
+			</message>
+		</list>
+	</item>
+
+	<!--æ­£åœ¨ä¸ºæ‚¨æ’­æ”¾ç‰‡ä¸­å¹¿å‘Š, å¯é€‰æ‹©æ˜¯å¦è¦è·³è¿‡, ç±»åˆ«æ˜¯1, æŒç»­æ—¶é—´æ˜¯8ç§’-->
+	<!--é™åˆ¶æ¡ä»¶æ˜¯ï¼š  ä¸æ˜¯æ­£åœ¨ç™»å½•ä¸­çš„ä¼šå‘˜-->
+	<!--æ¯å¤©æ¯äººæ¬¡åªæœ€å¤šæ˜¾ç¤ºä¸¤æ¬¡è¿™ä¸ªtips-->
+	<item id="ToSelectWhetherToSkipPlayingMiddleAD" level="1" duration="-1" type="1">
+		<conditions>
+			<fields>
+				<field name="curADState" operator="eq" value="false"/>
+				<field name="member" operator="eq" value="false"/>
+			</fields>
+			<frequency count="2">
+				<restrain name="day"/>
+				<restrain name="user"/>
+			</frequency>
+		</conditions>
+		<list>
+			<message>
+				<![CDATA[
+				tipsdata_to_cancel_skip_next_middle_ad
+            ]]>
+			</message>
+		</list>
+	</item>
+
+	<!--æç¤ºå³å°†è·³è¿‡8ç§’åŽä¼šæ˜¾ç¤ºçš„å‰§ä¸­å¹¿å‘Š, ç±»åˆ«æ˜¯1, æŒç»­æ—¶é—´æ˜¯8ç§’-->
+	<!--å¿…é¡»æ˜¯ç™»å½•çš„ä¼šå‘˜-->
+	<item id="ToCancelSkipNextMiddleAD" level="1" duration="8" type="1">
+		<conditions>
+			<fields>
+				<field name="curADState" operator="eq" value="false"/>
+				<field name="member" operator="eq" value="true"/>
+			</fields>
+			<frequency count="1">
+				<restrain name="day"/>
+				<restrain name="user"/>
+			</frequency>
+		</conditions>
+		<list>
+			<message>
+				<![CDATA[
+				tipsdata_to_cancel_skip_next_middle_ad
+            ]]>
+			</message>
+		</list>
+	</item>
+
+	<!--æç¤ºç‰ˆæƒä¸‹çº¿, å¦‚æžœè¿˜æœ‰å°äºŽ7å¤©çš„æ—¶é—´ä¸‹çº¿, æ¯å¤©ä¸€ä¸ªä¸“è¾‘ä¸€å°ç”µè„‘æé†’ä¸€æ¬¡, ç±»åˆ«æ˜¯1, ä»Žèµ·å§‹60ç§’å¼€å§‹æ˜¾ç¤º, æŒç»­æ—¶é—´æ˜¯10ç§’-->
+	<!--å› ä¸ºä¼˜å…ˆçº§å¾ˆé«˜, å‰é¢çš„æœ€é«˜ä¼˜å…ˆçº§æ˜¯10, æ‰€ä»¥è¿™é‡ŒæŠŠlevelè®¾ä¸º11.-->
+	<!--è¿™ä¸ªtipæ˜¯ç”±signalå‘èµ·çš„ï¼Ž Shawn.X -->
+	<!--ã€Š<span>#keyword#</span>ã€‹ å°†äºŽ  <span>#expiredTime#</span> ç‰ˆæƒåˆ°æœŸ.-->
+	<item id="NoticeThisCopyrightWillExpire" level="11" duration="10" type="2">
+		<conditions>
+			<fields>
+				<field name="curADState" operator="eq" value="false"/>
+				<field name="curPlayDuration" operator="eq" value="60"/>
+				<field name="expiredTimeInterval" operator="lt" value="8"/>
+				<field name="c" operator="eq" value="2"/>
+			</fields>
+			<frequency count="1">
+				<restrain name="day"/>
+				<restrain name="album"/>
+			</frequency>
+		</conditions>
+		<list>
+			<message>
+				<![CDATA[
+				tipsdata_to_cancel_skip_next_middle_ad
+            ]]>
+			</message>
+		</list>
+	</item>
+
+	<!-- éžä¼šå‘˜è¯•çœ‹.-->
+	<item id="TryWatch" level="10" duration="-1" type="1">
+		<list>
+			<message>
+				<![CDATA[
+				tipsdata_try_watch_have_ticket
+            ]]>
+			</message>
+		</list>
+	</item>
+
+	<!-- ä¼šå‘˜æ²¡æœ‰ç‚¹æ’­åˆ¸è¯•çœ‹.-->
+	<item id="TryWatchNotHaveTicket" level="10" duration="-1" type="1">
+		<list>
+			<message>
+				<![CDATA[
+				tipsdata_try_watch_have_ticket
+            ]]>
+			</message>
+		</list>
+	</item>
+
+	<!-- ä¼šå‘˜æœ‰ç‚¹æ’­åˆ¸è¯•çœ‹.-->
+	<item id="TryWatchHaveTicket" level="10" duration="-1" type="1">
+		<list>
+			<message>
+				<![CDATA[
+				tipsdata_try_watch_have_ticket
+            ]]>
+			</message>
+		</list>
+	</item>
+
+	<item id="TryWatchTotal" level="10" duration="-1" type="1">
+		<list>
+			<message>
+				<![CDATA[
+				tipsdata_try_watch_total
+            ]]>
+			</message>
+		</list>
+	</item>
+
+	<item id="DirectPageShowPP" level="4" duration="8" type="1">
+		<conditions>
+			<fields>
+				<field name="curADState" operator="eq" value="false"/>
+			</fields>
+			<frequency count="2">
+				<restrain name="day"/>
+			</frequency>
+		</conditions>
+		<list>
+			<message>
+				<![CDATA[
+				tipsdata_direct_page_show_pp
+            ]]>
+			</message>
+		</list>
+	</item>
+
+	<item id="CopyrightForceADTip" level="11" duration="8" type="1">
+		<conditions>
+			<fields>
+				<field name="curADState" operator="eq" value="true"/>
+			</fields>
+			<frequency count="100">
+				<restrain name="day"/>
+			</frequency>
+		</conditions>
+		<list>
+			<message>
+				<![CDATA[
+				tipsdata_copyright_force_adtip
+            ]]>
+			</message>
+		</list>
+	</item>
+
+	<item id="FilterOpenTip" level="10" duration="8" type="1">
+		<conditions>
+			<frequency count="100">
+				<restrain name="day"/>
+			</frequency>
+		</conditions>
+		<list>
+			<message>
+				<![CDATA[
+				tipsdata_filter_open_tip
+            ]]>
+			</message>
+		</list>
+	</item>
+
+	<item id="FilterCloseTip" level="10" duration="8" type="1">
+		<conditions>
+			<frequency count="100">
+				<restrain name="day"/>
+			</frequency>
+		</conditions>
+		<list>
+			<message>
+				<![CDATA[
+				tipsdata_filter_close_tip
+            ]]>
+			</message>
+		</list>
+	</item>
+
+	<item id="FilterNestEnjoyableTip" level="10" duration="8" type="1">
+		<conditions>
+			<frequency count="100">
+				<restrain name="day"/>
+			</frequency>
+		</conditions>
+		<list>
+			<message>
+				<![CDATA[
+				tipsdata_filter_nest_enjoyable_tip
+            ]]>
+			</message>
+		</list>
+	</item>
+
+	<item id="ADNoticeBuyVIPTips" level="1" duration="8" type="1">
+		<conditions>
+			<frequency count="2">
+				<restrain name="day"/>
+			</frequency>
+		</conditions>
+		<list>
+			<message>
+				<![CDATA[
+				tipsdata_ad_notice_buy_viptips
+            ]]>
+			</message>
+		</list>
+	</item>
 </root>
