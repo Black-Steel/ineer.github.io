@@ -379,7 +379,7 @@
 		<conditions>
 			<fields>
 				<field name="curADState" operator="eq" value="false"/>
-				<field name="member" operator="eq" value="true"/>
+				<field name="member" operator="eq" value="false"/>
 			</fields>
 			<frequency count="1">
 				<restrain name="day"/>
@@ -405,7 +405,7 @@
 				<field name="curADState" operator="eq" value="false"/>
 				<field name="curPlayDuration" operator="eq" value="60"/>
 				<field name="expiredTimeInterval" operator="lt" value="8"/>
-				<field name="c" operator="eq" value="2"/>
+				<field name="c" operator="eq" value="1"/>
 			</fields>
 			<frequency count="1">
 				<restrain name="day"/>
