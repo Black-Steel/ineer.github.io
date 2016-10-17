@@ -55,6 +55,7 @@
 	,"*://valf.atm.youku.com/vf?*"
 	,"*://r.l.youku.com/rec_ad_show?*/*"
 	,"*://p.l.youku.com/cms_operation_toollog?*"
+	,"*://count.vrs.sohu.com/count/stat.do?*"
     ],
     "filter2": ["*://*.iqiyi.com/v_*.html"
  	
