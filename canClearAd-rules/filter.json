@@ -55,6 +55,8 @@
 	,"*://valf.atm.youku.com/vf?*"
 	,"*://r.l.youku.com/rec_ad_show?*/*"
 	,"*://p.l.youku.com/cms_operation_toollog?*"
+	,"http://vip.youku.com/?*"
+	,"http://v.l.youku.com/perror?*"
 	,"*://js.tv.itc.cn/base/core/*.js*"
 	,"*://qf1.hd.sohu.com.cn/dov.do?*"
 	,"*://qf2.hd.sohu.com.cn/dov.do?*"
