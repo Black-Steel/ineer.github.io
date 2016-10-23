@@ -63,6 +63,6 @@
 	,"*://count.vrs.sohu.com/count/stat.do?*"
     ],
     "filter2": ["*://*.iqiyi.com/v_*.html"
- 	
+ 	,"*://*.iqiyi.com/w_*.html"
     ]
 }
