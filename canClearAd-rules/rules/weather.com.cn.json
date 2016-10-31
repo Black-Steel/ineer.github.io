@@ -1,0 +1,10 @@
+{
+    "removeRule": [
+        ["[class*='ad clearfix']", 0],
+		["[class*='ad2 fl']", 0],
+		["[class='box']", 0],
+		["[class='ad3']", 0],
+		["[class='ad4']", 0]
+    ],
+    "replaceRule": []
+}

@@ -1,0 +1,15 @@
+{
+    "removeRule": [
+        ["section[class*='tac']", 0],
+		["div[class='cbv']", 1],
+		["div[class='commt-r']", 1],
+		["div[class='navi']", 0],
+		["section[class='mt5'][style='text-align:left;']", 0],
+		["div[style*='index:999']", 0],
+		["div[id*='BAIDU_DUP_fp_wrapper']", 0],
+		["a[href*='itiger']", 1],
+		["div[class='mt5'][style='text-align:center;']", 0],
+		["div[class='item cooperation']", 0]
+    ],
+    "replaceRule": []
+}
