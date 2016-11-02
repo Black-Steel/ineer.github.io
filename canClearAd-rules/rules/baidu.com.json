@@ -43,7 +43,8 @@
 		["div[id^='300']", 0],
 		["div[id^='400']", 0],
 		["div[style*='important']", 0],
-	    	["[class='result c-container']", 0]
+	    	["[class='result c-container']", 0],
+	    	["[class*='-0']", 3]
     ],
     "replaceRule": [
         ["div[class*='video_outer_wrap']", 0]
