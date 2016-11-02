@@ -1,4 +1,9 @@
 {
-    "removeRule": [],
+    "removeRule": [
+        ["[class^='gg']", 0],
+		["[class='post_header']", 0],
+		["[class='post_end_ad']", 0],
+		["[class='post_content_endad']", 0]
+    ],
     "replaceRule": []
 }
