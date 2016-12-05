@@ -45,6 +45,7 @@
 	,"*://imgcache.qq.com/tencentvideo_v1/player/partialup/MediaPlugin.swf*"
 	,"*://imgcache.qq.com/tencentvideo_v1/playerv3/MediaPlugin.swf*"
 	,"*://imgcache.qq.com/tencentvideo_v1/playerv3/partialup/MediaPlugin.swf*"
+	,'*://ca.gtimg.com/adplugin/swf/MediaPlugin.swf?*'
 	,"*://pic.fastapi.net/sdk/fl/ku6/ku6sdk.swf*"
 	,"*://p.you.video.sina.com.cn/swf/sub/publicityPlayer20160913_V4_1_39_74.swf*"
 	,"*://static.funshion.com/market/p2p/preroll/*"
