@@ -1,6 +1,7 @@
 {
     "filter1":["*://www.bilibili.com/video/av*"
         ,"*://*.bilibili.com/anime/v/*"
+        ,"*://*.bilibili.com/movie/*"
         ,"*://*.hdslb.com/*.swf*"
         ,"*://*.acgvideo.com/*/*.flv?*"
         ,"*://*/ws.acgvideo.com/*/*.flv?*"
