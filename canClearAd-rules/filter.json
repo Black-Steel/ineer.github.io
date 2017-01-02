@@ -64,6 +64,9 @@
 	,"*://qf1.hd.sohu.com.cn/dov.do?*"
 	,"*://qf2.hd.sohu.com.cn/dov.do?*"
 	,"*://count.vrs.sohu.com/count/stat.do?*"
+	,"*://pcaliyun.res.mgtv.com/*/*.flv*"
+	,"*://flv.res.hunantv.com/*/*.flv*"
+	,"*://image.res.hunantv.com/*/*.swf*"
     ],
     "filter2": ["*://*.iqiyi.com/v_*.html"
  	,"*://*.iqiyi.com/w_*.html"
