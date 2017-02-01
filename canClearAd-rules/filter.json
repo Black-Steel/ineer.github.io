@@ -66,6 +66,7 @@
 	,"*://pcaliyun.res.mgtv.com/*/*.flv*"
 	,"*://flv.res.hunantv.com/*/*.flv*"
 	,"*://image.res.hunantv.com/*/*.swf*"
+	,"*://*.kankan.com/adlistrequest?*"
     ],
     "filter2": ["*://*.iqiyi.com/v_*.html"
  	,"*://*.iqiyi.com/w_*.html"
