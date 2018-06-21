@@ -945,15 +945,15 @@ app.controller("pptplayController", ["$scope", "$rootScope", "$stateParams", "ge
 			var postData = {
 				pkey: $scope.pkey,
 				studentid: $rootScope.user.studentId,
-				time: $scope.nowVideoDuration,
+				time: parseInt($scope.nowVideoDuration),
 				currentID: $scope.currentPlayID,
-				timestamp: $scope.nowVideoDuration,
+				timestamp: parseInt($scope.nowVideoDuration),
 				//begintimespan: $scope.begintimespan, //开始页数
 				videoDuration: $scope.nowVideoDuration,
 				coursewareid: $stateParams.coursewareid,
 				videotype: $scope.course.videotype,
 				accountid: $rootScope.user.accountId,
-				studytime: $scope.nowVideoDuration - 1,
+				studytime: parseInt($scope.nowVideoDuration) - 1,
 				studetailcount: $scope.stuPlayDetailCount,
 				courwarestudytime: $scope.courwarestudytime,
 				coursewarename: $scope.course.name
@@ -1978,6 +1978,9 @@ app.controller("videoController", ["$scope", "$rootScope", "$stateParams", "getD
 	    }
 
 	    var O_func = function () {
+		//var tempTimeArr = $scope.nowVideoDuration.split(':');
+	    	//var tempTime = parseInt(tempTimeArr[0]) * 3600 + parseInt(tempTimeArr[1]) * 60 + parseInt(tempTimeArr[2]);
+	    	//tempTime -= 1;
 	        var postData = {
 	            pkey: $scope.pkey,
 	            studentid: $rootScope.user.studentId,
@@ -1987,7 +1990,7 @@ app.controller("videoController", ["$scope", "$rootScope", "$stateParams", "getD
 	            videoDuration: $scope.nowVideoDuration,
 	            coursewareid: $stateParams.coursewareid,
 	            accountid: $rootScope.user.accountId,
-	            studytime: $scope.studytime,
+	            studytime: $scope.studytime, // tempTime,
 	            studetailcount: $scope.stuPlayDetailCount,
 	            courwarestudytime: $scope.courwarestudytime,
 	            coursewarename: $scope.course.name
