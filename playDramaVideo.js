@@ -823,7 +823,7 @@ app.controller("pptplayController", ["$scope", "$rootScope", "$stateParams", "ge
 		getDataSource.getDataSource(keyArray
 			, { coursewareid: $stateParams.coursewareid, studentid: $rootScope.user.studentId, currentID: $scope.currentPlayID, courseid: $stateParams.coursewareid }
 			, function (data) {
-				//console.log("data", data);
+				console.log("data", data);
 				var stuPlayTime = _.find(data, { name: "selectStudentPlayTime" }).data;
 				var stuPlayDetailCount = _.find(data, { name: "selectStudentPlayDetailCount" }).data;
 				var courwareStudytime = _.find(data, { name: "getStudytimeByCoursewareId" }).data;
@@ -884,14 +884,14 @@ app.controller("pptplayController", ["$scope", "$rootScope", "$stateParams", "ge
 			$scope.loadPPTCoursewareImg($scope.pageindex, $scope.course.pptcoursefile_servername);
 		}
 
-		var waiteSenconds=5;
+		var waiteSenconds=1;
 		var intervalFunc = function () {
 			$scope.$apply(function () {
 				$scope.goDownpageText = "等待" + waiteSenconds-- + "s";
 			});
 			if (waiteSenconds < 0) {
 				clearInterval(intervalObj);
-				waiteSenconds = 5;
+				waiteSenconds = 1;
 				$scope.$apply(function () {
 					$scope.enableGoDownpage = false;
 					$scope.goDownpageText = "下一页";
