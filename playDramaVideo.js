@@ -824,7 +824,6 @@ app.controller("pptplayController", ["$scope", "$rootScope", "$stateParams", "ge
 			, { coursewareid: $stateParams.coursewareid, studentid: $rootScope.user.studentId, currentID: $scope.currentPlayID, courseid: $stateParams.coursewareid }
 			, function (data) {
 				console.log("data", data);
-                                data[1].data[0].isplaycompletion = 1;
 				var stuPlayTime = _.find(data, { name: "selectStudentPlayTime" }).data;
 				var stuPlayDetailCount = _.find(data, { name: "selectStudentPlayDetailCount" }).data;
 				var courwareStudytime = _.find(data, { name: "getStudytimeByCoursewareId" }).data;
