@@ -945,15 +945,15 @@ app.controller("pptplayController", ["$scope", "$rootScope", "$stateParams", "ge
 			var postData = {
 				pkey: $scope.pkey,
 				studentid: $rootScope.user.studentId,
-				time: $scope.pageindex,
+				time: $scope.nowVideoDuration,
 				currentID: $scope.currentPlayID,
-				timestamp: $scope.pageindex,
+				timestamp: $scope.nowVideoDuration,
 				//begintimespan: $scope.begintimespan, //开始页数
 				videoDuration: $scope.nowVideoDuration,
 				coursewareid: $stateParams.coursewareid,
 				videotype: $scope.course.videotype,
 				accountid: $rootScope.user.accountId,
-				studytime: $scope.studytime,
+				studytime: $scope.nowVideoDuration - 1,
 				studetailcount: $scope.stuPlayDetailCount,
 				courwarestudytime: $scope.courwarestudytime,
 				coursewarename: $scope.course.name
