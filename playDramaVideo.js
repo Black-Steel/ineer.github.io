@@ -1715,7 +1715,7 @@ app.controller("videoController", ["$scope", "$rootScope", "$stateParams", "getD
                             //如果没有看完需要限制拖动
                             if ($scope.isplaycompletion != 1) {
                                 player1Obj.flashvars.watchStartTime = $scope.studytime;
-                                player1Obj.flashvars.ban_seek_by_limit_time = "off";
+                                player1Obj.flashvars.ban_seek_by_limit_time = "on";
                             }
                             player1 = polyvObject('#mainVideo').videoPlayer(player1Obj);
                             //单视频样式调整
@@ -1744,7 +1744,7 @@ app.controller("videoController", ["$scope", "$rootScope", "$stateParams", "getD
                                 //如果没有看完需要限制拖动
                                 if ($scope.isplaycompletion != 1) {
                                     player2Obj.flashvars.watchStartTime = $scope.studytime;
-                                    player2Obj.flashvars.ban_seek_by_limit_time = "off";
+                                    player2Obj.flashvars.ban_seek_by_limit_time = "on";
                                 }
                                 player2 = polyvObject('#smallVideo').videoPlayer(player2Obj);
                             }
@@ -1972,7 +1972,7 @@ app.controller("videoController", ["$scope", "$rootScope", "$stateParams", "getD
 	    			clearInterval(obj);
 	    			//视频一播放就提交一次，解决定时器时间不够的问题
 	    			O_func();
-	    			obj = setInterval(O_func, 60000);
+	    			obj = setInterval(O_func, 10000);
 	    		}
 	    	}
 	    }
