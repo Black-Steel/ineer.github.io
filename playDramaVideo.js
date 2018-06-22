@@ -1972,7 +1972,7 @@ app.controller("videoController", ["$scope", "$rootScope", "$stateParams", "getD
 	    			clearInterval(obj);
 	    			//视频一播放就提交一次，解决定时器时间不够的问题
 	    			O_func();
-	    			obj = setInterval(O_func, 3000);
+	    			obj = setInterval(O_func, 60000);
 	    		}
 	    	}
 	    }
