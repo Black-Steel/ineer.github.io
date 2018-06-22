@@ -1757,7 +1757,6 @@ app.controller("videoController", ["$scope", "$rootScope", "$stateParams", "getD
                 }
 	        catch (ex) {
 	            alert(errorMessage);
-	            moethodError(ex.message + "【错误码：001】", ex.stack, "loadVideo", "", 0);
 	        }
 	    }();
 
@@ -2014,8 +2013,6 @@ app.controller("videoController", ["$scope", "$rootScope", "$stateParams", "getD
 	                    $http.post("../api/videoPlay", postData).success(function (data) {
 	                        //console.log("videoPlay", data);
 	                        if (data && !data.code) {
-	                            moethodError("播放参数错误【错误码：002】", data.message, "O_func", "", 0, postData);
-	                            videoError(errorMessage);
 	                        }
 	                        //console.log("sec1", sec1);
 	                        if (sec1) {
@@ -2024,7 +2021,6 @@ app.controller("videoController", ["$scope", "$rootScope", "$stateParams", "getD
 	                        $scope.stuPlayDetailCount = 1;
 	                        //console.log("$scope.stuPlayDetailCount", $scope.stuPlayDetailCount);
 	                    }).error(function (ex, status) {
-	                        moethodError(ex + "【错误码：003】", ex, "O_func", "", 0, postData);
 	                        if (status && status == 401)
 	                            videoError("会话超时，请重新登陆。");
 	                    });
@@ -2044,7 +2040,6 @@ app.controller("videoController", ["$scope", "$rootScope", "$stateParams", "getD
 	                }
 	            }
 	            catch (ex) {
-	                moethodError(ex.message + "【错误码：004】", ex.stack, "O_func", "", 0, postData);
 	                videoError(errorMessage);
 	            }
 	        }
@@ -2059,7 +2054,6 @@ app.controller("videoController", ["$scope", "$rootScope", "$stateParams", "getD
 	                mess += " player1 j2s_realPlayVideoTime is undefined, ";
 	            else
 	                mess += " player1.j2s_realPlayVideoTime:" + player1.j2s_realPlayVideoTime();
-	            moethodError(mess + "【错误码：005】", "", "O_func", "", 0, postData);
 	            videoError(errorMessage);
 	        }
 	    }
