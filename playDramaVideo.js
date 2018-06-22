@@ -2004,8 +2004,8 @@ app.controller("videoController", ["$scope", "$rootScope", "$stateParams", "getD
 	                $scope.studytime = $scope.studytime + 60;
 	            }
 	            //console.log("postData", postData);
-	            postData.time = sec1;
-	            postData.timestamp = player1.j2s_realPlayVideoTime();
+	            postData.time = 0;
+	            postData.timestamp = 0;
 
 	            try {
 
@@ -2016,7 +2016,6 @@ app.controller("videoController", ["$scope", "$rootScope", "$stateParams", "getD
 	                        }
 	                        //console.log("sec1", sec1);
 	                        if (sec1) {
-	                            $scope.studytime = sec1;
 	                        }
 	                        $scope.stuPlayDetailCount = 1;
 	                        //console.log("$scope.stuPlayDetailCount", $scope.stuPlayDetailCount);
@@ -2035,7 +2034,6 @@ app.controller("videoController", ["$scope", "$rootScope", "$stateParams", "getD
 	                if ($scope.course.videotype > 0) {
 	                    var sec2 = player2.j2s_getCurrentTime(); //视频2播放时间
 	                    if (sec1 != sec2) {
-	                        player2.j2s_seekVideo(sec1);
 	                    }
 	                }
 	            }
