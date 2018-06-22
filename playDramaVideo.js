@@ -1978,9 +1978,9 @@ app.controller("videoController", ["$scope", "$rootScope", "$stateParams", "getD
 	    }
 
 	    var O_func = function () {
-		//var tempTimeArr = $scope.nowVideoDuration.split(':');
-	    	//var tempTime = parseInt(tempTimeArr[0]) * 3600 + parseInt(tempTimeArr[1]) * 60 + parseInt(tempTimeArr[2]);
-	    	//tempTime -= 1;
+		var tempTimeArr = $scope.nowVideoDuration.split(':');
+	    	var tempTime = parseInt(tempTimeArr[0]) * 3600 + parseInt(tempTimeArr[1]) * 60 + parseInt(tempTimeArr[2]);
+	    	tempTime -= 1;
 	        var postData = {
 	            pkey: $scope.pkey,
 	            studentid: $rootScope.user.studentId,
@@ -1990,12 +1990,12 @@ app.controller("videoController", ["$scope", "$rootScope", "$stateParams", "getD
 	            videoDuration: $scope.nowVideoDuration,
 	            coursewareid: $stateParams.coursewareid,
 	            accountid: $rootScope.user.accountId,
-	            studytime: $scope.studytime, // tempTime,
+	            studytime: tempTime,
 	            studetailcount: $scope.stuPlayDetailCount,
 	            courwarestudytime: $scope.courwarestudytime,
 	            coursewarename: $scope.course.name
 	        };
-
+                console.log('postData', postData);
 	        if (player1 != undefined && player1.j2s_getCurrentTime != undefined && player1.j2s_realPlayVideoTime != undefined) {
 	            var sec1 = player1.j2s_getCurrentTime(); //视频1播放时间;
 	            //console.log("视屏播放时间" + new Date());
