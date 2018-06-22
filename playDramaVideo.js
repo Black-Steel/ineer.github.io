@@ -2018,6 +2018,7 @@ app.controller("videoController", ["$scope", "$rootScope", "$stateParams", "getD
 	                        }
 	                        //console.log("sec1", sec1);
 	                        if (sec1) {
+                                    $scope.studytime = sec1;
 	                        }
 	                        $scope.stuPlayDetailCount = 1;
 	                        //console.log("$scope.stuPlayDetailCount", $scope.stuPlayDetailCount);
