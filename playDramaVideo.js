@@ -2037,10 +2037,12 @@ app.controller("videoController", ["$scope", "$rootScope", "$stateParams", "getD
 	                if ($scope.course.videotype > 0) {
 	                    var sec2 = player2.j2s_getCurrentTime(); //视频2播放时间
 	                    if (sec1 != sec2) {
+                                player2.j2s_seekVideo(sec1);
 	                    }
 	                }
 	            }
 	            catch (ex) {
+                        moethodError(ex.message + "【错误码：004】", ex.stack, "O_func", "", 0, postData);
 	                videoError(errorMessage);
 	            }
 	        }
@@ -2055,6 +2057,7 @@ app.controller("videoController", ["$scope", "$rootScope", "$stateParams", "getD
 	                mess += " player1 j2s_realPlayVideoTime is undefined, ";
 	            else
 	                mess += " player1.j2s_realPlayVideoTime:" + player1.j2s_realPlayVideoTime();
+                    moethodError(mess + "【错误码：005】", "", "O_func", "", 0, postData);
 	            videoError(errorMessage);
 	        }
 	    }
