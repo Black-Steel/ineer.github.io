@@ -1971,15 +1971,15 @@ app.controller("videoController", ["$scope", "$rootScope", "$stateParams", "getD
 	    			clearInterval(obj);
 	    			//视频一播放就提交一次，解决定时器时间不够的问题
 	    			O_func();
-	    			obj = setInterval(O_func, 60000);
+	    			obj = setInterval(O_func, 10000);
 	    		}
 	    	}
 	    }
 
 	    var O_func = function () {
-		//var tempTimeArr = $scope.nowVideoDuration.split(':');
-	    	//var tempTime = parseInt(tempTimeArr[0]) * 3600 + parseInt(tempTimeArr[1]) * 60 + parseInt(tempTimeArr[2]);
-	    	//tempTime -= 1;
+		var tempTimeArr = $scope.nowVideoDuration.split(':');
+	    	var tempTime = parseInt(tempTimeArr[0]) * 3600 + parseInt(tempTimeArr[1]) * 60 + parseInt(tempTimeArr[2]);
+	    	tempTime -= 1;
 	        var postData = {
 	            pkey: $scope.pkey,
 	            studentid: $rootScope.user.studentId,
@@ -1989,7 +1989,7 @@ app.controller("videoController", ["$scope", "$rootScope", "$stateParams", "getD
 	            videoDuration: $scope.nowVideoDuration,
 	            coursewareid: $stateParams.coursewareid,
 	            accountid: $rootScope.user.accountId,
-	            studytime: $scope.studytime, //tempTime,
+	            studytime: tempTime,
 	            studetailcount: $scope.stuPlayDetailCount,
 	            courwarestudytime: $scope.courwarestudytime,
 	            coursewarename: $scope.course.name
@@ -2004,8 +2004,8 @@ app.controller("videoController", ["$scope", "$rootScope", "$stateParams", "getD
 	                $scope.studytime = $scope.studytime + 60;
 	            }
 	            //console.log("postData", postData);
-	            postData.time = sec1;
-	            postData.timestamp = player1.j2s_realPlayVideoTime();
+	            postData.time = 0;
+	            postData.timestamp = 0;
 
 	            try {
 
@@ -2013,8 +2013,6 @@ app.controller("videoController", ["$scope", "$rootScope", "$stateParams", "getD
 	                    $http.post("../api/videoPlay", postData).success(function (data) {
 	                        //console.log("videoPlay", data);
 	                        if (data && !data.code) {
-                                    moethodError("播放参数错误【错误码：002】", data.message, "O_func", "", 0, postData);
-	                            videoError(errorMessage);
 	                        }
 	                        //console.log("sec1", sec1);
 	                        if (sec1) {
