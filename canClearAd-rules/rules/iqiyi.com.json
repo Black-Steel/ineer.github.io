@@ -1,6 +1,6 @@
 {
     "removeRule": [
-        ["div[class='qy-index-content']", 0]
+        ["div[class="qy-index-page"]", 0]
                     ],
     "replaceRule": []
 }
