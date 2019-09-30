@@ -1,4 +1,6 @@
 {
-    "removeRule": [],
+    "removeRule": [
+        ["div[id*='module_ad']", 0]
+                    ],
     "replaceRule": []
 }
