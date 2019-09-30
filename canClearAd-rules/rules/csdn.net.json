@@ -7,6 +7,7 @@
 		["div[id*='ENGAGEYA_WIDGET']", 0],
 		["div[class='ad_l']", 0],
 		["div[id*='BAIDU_DUP']", 0],
+	        ["div[id*='app']", 0],
 		["div[id*='cpro_u']", 0]
     ],
     "replaceRule": []
