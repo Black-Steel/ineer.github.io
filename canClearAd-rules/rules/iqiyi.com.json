@@ -1,6 +1,6 @@
 {
     "removeRule": [
-        ["div[id*='module_ad']", 0]
+        ["div[class='qy-index-content']", 0]
                     ],
     "replaceRule": []
 }
