@@ -54,7 +54,7 @@
 	,"*://valf.atm.youku.com/vf?*"
 	,"*://r.l.youku.com/rec_ad_show?*"
 	,"*://p.l.youku.com/cms_operation_toollog?*"
-	,"*://vip.youku.com/?*"
+	,"*://*.youku.com/?*"
 	,"*://v.l.youku.com/perror?*"
 	,"*://r1.ykimg.com/material/*/*.swf"
 	,"*://valp.atm.youku.com/vp?*"
